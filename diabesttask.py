@@ -146,7 +146,3 @@ if st.button('Predict'):
    
 
 
-    return st_lottie(animation_json, height=300, key="user")
-
-# Display the Lottie animation
-load_lottie_file(animation_file_path)
