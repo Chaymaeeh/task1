@@ -8,9 +8,6 @@ from sklearn.model_selection import train_test_split
 
 df = pd.read_csv('diabetes_cleaned_v2.csv')
 
-st.subheader('Training Data Stats')
-st.write(df.describe())
-
 X = df.drop('Outcome', axis=1)
 y = df['Outcome']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
@@ -51,7 +48,7 @@ import seaborn as sns
 import numpy as np
 
 
-classifier_name = st.sidebar.selectbox("Select Classifier", ["Pregnancy", "Glucose", "Blood Pressure", "Skin Thickness", "Insulin", "BMI", "DPF"])
+classifier_name = st.sidebar.selectbox("Select :", ["Pregnancy", "Glucose", "Blood Pressure", "Skin Thickness", "Insulin", "BMI", "DPF"])
 color_dict = {
     "Pregnancy": "green",
     "Glucose": "magenta",
