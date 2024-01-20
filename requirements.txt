@@ -6,4 +6,4 @@ streamlit
 plotly
 Pillow
 scikit_learn
-json
+
