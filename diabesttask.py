@@ -12,7 +12,7 @@ X = df.drop('Outcome', axis=1)
 y = df['Outcome']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 
-
+st.title('Diabetes Prediction')
 def user_report():
     Pregnancies = st.slider("Your Number of Pregnancies", 0, 17, 3)
     Glucose = st.slider("Your Glucose", 0, 200, 120)
@@ -128,7 +128,7 @@ elif classifier_name == "DPF":
 plt.close('all')
 
 
-st.title('Diabetes Prediction')
+
 st.sidebar.header('Patient Data')
 st.sidebar.write(user_data)
 
