@@ -12,7 +12,7 @@ import json
 
 
 # Load the dataset
-df = pd.read_csv('c:\\Users\\Chaymae\\Desktop\\diabetes_cleaned_v2.csv')
+df = pd.read_csv('diabetes_cleaned_v2.csv')
 
 
 
